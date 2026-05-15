@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Algorithm_Dar extends Algorithm_V1{
     @Override
     int sum(int[] input) {
@@ -13,11 +15,16 @@ public class Algorithm_Dar extends Algorithm_V1{
 
     @Override
     int mean(int[] input) {
-        int total = 0;
-         for (int num : input) {
-            total += num;
+        int sum = 0;
+         for (int i = 0; i < input.length; i++) {
+            sum = sum + input[i];
         }
-        return (int) total / input.length;
+        int mean = (int) sum / input.length;
+        return mean;
     }
-    
+    public static void main(String[] args) {
+        //
+        Algorithm_V1 al = new Algorithm_Dar();
+        System.out.println(Arrays.toString(al.sample));
+    }
 }
