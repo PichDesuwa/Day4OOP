@@ -23,8 +23,9 @@ public class Algorithm_Dar extends Algorithm_V1{
         return mean;
     }
     public static void main(String[] args) {
-        //
-        Algorithm_V1 al = new Algorithm_Dar();
-        System.out.println(Arrays.toString(al.sample));
+        Algorithm_Dar Dar = new Algorithm_Dar();
+        int[] input = {1, 2, 3, 4, 5};
+        int result = Dar.mean(input);     
+        System.out.println("The mean is: " + result);  //
     }
 }
