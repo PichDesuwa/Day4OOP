@@ -11,7 +11,7 @@ public class Algorithm_Lyza extends Algorithm_V1 {
         Algorithm_Lyza lyza = new Algorithm_Lyza();
         int[] input = {1, 2, 3, 4, 5};
         int result = lyza.sum(input);     
-        System.out.println("The sum is: " + result);  
+        System.out.println("The sum is: " + result);  //
     }
 }  
 
