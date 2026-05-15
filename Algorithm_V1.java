@@ -11,5 +11,8 @@ abstract  class Algorithm_V1 {
     abstract double average(int[] input);
 
     //method mean (Dara)
-    abstract int mean(int[] input);
+    int mean(int[] input){
+        return new Algorithm_Dar().mean(input);
+    };
+
 }
