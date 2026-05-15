@@ -1,17 +1,19 @@
-public class Algorithm_Phanith extends Algorithm_V1 {
+public class Algorithm_Phanith extends Algorithm_V1{
+
     @Override
-    public int sum(int[] input) {
+    int sum(int[] input) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'sum'");
     }
 
     @Override
     double average(int[] input) {
-        int total = 0;
-        for (int num : input) {
-            total += num;
+         int sum = 0;
+        for (int i = 0; i < input.length; i++) {
+            sum = sum + input[i];
         }
-        return (double) total / input.length;
+        double average = (double) sum / input.length;
+        return average;
     }
 
     @Override
@@ -19,4 +21,6 @@ public class Algorithm_Phanith extends Algorithm_V1 {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'mean'");
     }
+
+    
 }
