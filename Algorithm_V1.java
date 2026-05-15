@@ -3,8 +3,11 @@ abstract  class Algorithm_V1 {
     int[] sample = {1, 2, 3, 4, 5};
 
     //method sum (lyza)
-    abstract int sum();
+    abstract int sum(int[] input);
 
     //method average (phanith)
-    abstract double average();
+    abstract double average(int[] input);
+
+    //method mean (Dara)
+    abstract int mean(int[] input);
 }
