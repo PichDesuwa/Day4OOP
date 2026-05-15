@@ -8,4 +8,16 @@ public class Algorithm_Lyza extends Algorithm_V1 {
         return total;
     }
 
+    @Override
+    double average(int[] input) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'average'");
+    }
+
+    @Override
+    int mean(int[] input) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'mean'");
+    }
+
 }
