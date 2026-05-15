@@ -13,6 +13,16 @@ public class Algorithm_Lyza extends Algorithm_V1 {
         int result = lyza.sum(input);     
         System.out.println("The sum is: " + result);  //
     }
+    @Override
+    double average(int[] input) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'average'");
+    }
+    @Override
+    int mean(int[] input) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'mean'");
+    }
 }  
 
  
