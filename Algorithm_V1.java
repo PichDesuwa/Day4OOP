@@ -3,28 +3,18 @@ abstract  class Algorithm_V1 {
     int[] sample = {2,5,7,18,92,40,12,5};
 
     // Bubble sort (Lyza)
-    int[] bubbleSort(int[] input) {
-        return Algorithm_Lyza().bubbleSort(input);
-    }
+    abstract int[] bubbleSort(int[] input);
 
     // Selection sort (Phanith)
-    int[] selectionSort(int[] input) {
-    return Algorithm_Phanith().selectionSort(input);
-    }
+    abstract  int[] selectionSort(int[] input);
 
     // Merge sort (Pichboth)
-    int[] mergeSort(int[] input) {
-        return Algorithm_Pichboth().mergeSort(input);
-    }
+    abstract int[] mergeSort(int[] input);
 
     // Heap sort (Pichboth)
-    int[] heapSort(int[] input) {
-        return Algorithm_Pichboth().heapSort(input);
-    }
+    abstract int[] heapSort(int[] input);
 
     // Insertion sort (Dara)
-     int[] insertionSort(int[] input) {
-        return Algorithm_Dar().insertionSort(input);
-    }
+    abstract int[] insertionSort(int[] input);
 
 }
