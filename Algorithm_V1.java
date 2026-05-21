@@ -1,18 +1,30 @@
 abstract  class Algorithm_V1 {
     //attribute
-    int[] sample = {1, 2, 3, 4, 5};
+    int[] sample = {2,5,7,18,92,40,12,5};
 
-    //method sum (lyza)
-    int sum(int[] input){
-        return  new Algorithm_Lyza().sum(input);
-    };
+    // Bubble sort (Lyza)
+    int[] bubbleSort(int[] input) {
+        return Algorithm_Lyza().bubbleSort(input);
+    }
 
-    //method average (phanith)
-    abstract double average(int[] input);
+    // Selection sort (Phanith)
+    int[] selectionSort(int[] input) {
+    return Algorithm_Phanith().selectionSort(input);
+    }
 
-    //method mean (Dara)
-    int mean(int[] input){
-        return new Algorithm_Dar().mean(input);
-    };
+    // Merge sort (Pichboth)
+    int[] mergeSort(int[] input) {
+        return Algorithm_Pichboth().mergeSort(input);
+    }
+
+    // Heap sort (Pichboth)
+    int[] heapSort(int[] input) {
+        return Algorithm_Pichboth().heapSort(input);
+    }
+
+    // Insertion sort (Dara)
+     int[] insertionSort(int[] input) {
+        return Algorithm_Dar().insertionSort(input);
+    }
 
 }
