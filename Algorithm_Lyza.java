@@ -1,28 +1,23 @@
-public class Algorithm_Lyza extends Algorithm_V1 {
-    @Override
-    public int sum(int[] input) {
-        int sum = 0;
-        for (int i = 0; i < input.length; i++) {
-            sum = sum + input[i];
-        }
-        return sum;
-    }
-    public static void main(String[] args) {
-        Algorithm_Lyza lyza = new Algorithm_Lyza();
-        int[] input = {1, 2, 3, 4, 5};
-        int result = lyza.sum(input);     
-        System.out.println("The sum is: " + result);  //
-    }
-    @Override
-    double average(int[] input) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'average'");
-    }
-    @Override
-    int mean(int[] input) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'mean'");
-    }
-}  
+abstract  class Algorithm_V1 {
+    //attribute
+    int[] sample = {2,5,7,18,92,40,12,5};
 
- 
+    // Bubble sort (Lyza)
+    @Override
+    abstract int[] bubbleSort(int[] input) {
+
+        for (int i = 0; i < input.length - 1; i++) {
+            for (int j = 0; j < input.length - i - 1; j++) {
+
+                if (input[j] > input[j + 1]) {
+
+                    int temp = input[j];
+                    input[j] = input[j + 1];
+                    input[j + 1] = temp;
+                }
+            }
+        }
+
+        return input;
+    }
+}
