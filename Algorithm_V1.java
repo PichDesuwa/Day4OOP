@@ -3,8 +3,24 @@ abstract  class Algorithm_V1 {
     int[] sample = {2,5,7,18,92,40,12,5};
 
     // Bubble sort (Lyza)
-    abstract int[] bubbleSort(int[] input);
+    @Override
+    abstract int[] bubbleSort(int[] input) {
 
+        for (int i = 0; i < input.length - 1; i++) {
+            for (int j = 0; j < input.length - i - 1; j++) {
+
+                if (input[j] > input[j + 1]) {
+
+                    int temp = input[j];
+                    input[j] = input[j + 1];
+                    input[j + 1] = temp;
+                }
+            }
+        }
+
+        return input;
+    }
+    
     // Selection sort (Phanith)
     abstract  int[] selectionSort(int[] input);
 
